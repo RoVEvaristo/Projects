@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="Survey.css">
+</head>
+<body>
+  <h1 id="title">Rockstar Records Survey Form</h1>
+  <p id="description">We are grateful for your feedback. Please fill out the survey form to help us improve in the future.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Full Name
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required>
+    </label>
+
+    <label id="email-label" for="email">E-mail
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your E-mail address"
+        required>
+    </label>
+
+    <label id="number-label" for="number">Age (optional)
+      <input
+        type="number"
+        id="number"
+        name="age"
+        placeholder="Enter your age"
+        min="10"
+        max="100">
+    </label>
+
+    <label for="dropdown">How did you hear about Rockstar Records
+      <select name="refer" id="dropdown">
+        <option>Select from the following:</option>
+        <option>Social media</option>
+        <option>Online Advertisement</option>
+        <option>Friends/Family</option>
+        <option>Artist/Musicians</option>
+        <option>Others</option>
+      </select> 
+    </label>
+
+    <div class="checkboxes">
+      <p class="option">What are the services that satisfied you the most? (Check all that apply)</p>
+
+      <label><input type="checkbox" name="services" value="Instruments" /> Instrument Rental</label>
+      <label><input type="checkbox" name="services" value="Recording" /> Recording</label>
+      <label><input type="checkbox" name="services" value="Audio Mastering" /> Audio Mastering</label>
+      <label><input type="checkbox" name="services" value="Mixing" /> Mixing</label>
+      <label><input type="checkbox" name="services" value="Studio Room" /> Studio Room</label>
+      <label><input type="checkbox" name="services" value="Feedback Sessions" /> Feedback Sessions</label>
+    </div>
+
+    <div class="checkboxes">
+      <p class="option">What music genre/s do you listen to the most? (Select two)</p>
+
+      <label><input type="checkbox" name="Genre" value="Rock" /> Rock</label>
+      <label><input type="checkbox" name="Genre" value="Disco Funk" /> Disco Funk</label>
+      <label><input type="checkbox" name="Genre" value="Alternative Rock" /> Alternative Rock</label>
+      <label><input type="checkbox" name="Genre" value="Pop" /> Pop</label>
+      <label><input type="checkbox" name="Genre" value="Hip-Hop" /> Hip-Hop</label>
+      <label><input type="checkbox" name="Genre" value="Other" /> Other/s</label>
+    </div>
+
+    <p class="option">Would you recommend Rockstar Records to other/s?</p>
+    <label><input type="radio" name="Recommendation" value="Yes" checked /> Yes</label>
+    <label><input type="radio" name="Recommendation" value="No" /> No</label>
+
+    <label for="suggestions">Any suggestions or comments? Kindly put it here.</label>
+    <textarea id="suggestions" name="suggestions" placeholder="Leave your suggestions or comments here"></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>

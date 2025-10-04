@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="TechDoc.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Docs Menu</header>
+        <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+        <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+        <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+        <a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a>
+        <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_HTML">
+            <header>Introduction to HTML</header>
+            <p>HTML stands for HyperText Markup Language. It is the standard language for creating web pages.</p>
+            <p>Every HTML document starts with a <code>&lt;!DOCTYPE html&gt;</code> declaration.</p>
+            <ul>
+                <li>HTML structures web content</li>
+                <li>HTML elements are building blocks</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="HTML_Elements">
+            <header>HTML Elements</header>
+            <p>Elements are defined by tags, such as <code>&lt;p&gt;</code> for paragraphs.</p>
+            <p>They can have attributes like <code>id</code> or <code>class</code> to identify them.</p>
+            <ul>
+                <li>Heading tags: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+                <li>Lists: <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS_Styling">
+            <header>CSS Styling</header>
+            <p>CSS (Cascading Style Sheets) controls the presentation of HTML elements.</p>
+            <p>Use classes and IDs to apply styles selectively, for example:</p>
+            <code>.example { color: red; }</code>
+            <ul>
+                <li>Fonts and colors</li>
+                <li>Layout and spacing</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="JavaScript_Basics">
+            <header>JavaScript Basics</header>
+            <p>JavaScript adds interactivity to web pages.</p>
+            <p>Variables can be defined using <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+            <ul>
+                <li>Functions perform tasks</li>
+                <li>Events respond to user actions</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="DOM_Manipulation">
+            <header>DOM Manipulation</header>
+            <p>The Document Object Model (DOM) represents the page structure.</p>
+            <p>JavaScript can be used to modify elements dynamically:</p>
+            <code>document.getElementById('demo').innerText = 'Hello';</code>
+            <ul>
+                <li>Select elements</li>
+                <li>Update content</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

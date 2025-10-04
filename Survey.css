@@ -1,0 +1,44 @@
+h1, p {text-align: center;}
+#age {width: 26%;}
+input, select{
+   background-color: #2C2C2C;
+   color: lightgray;
+   border: 2px solid #3D3D3D;
+   display: block;
+   margin-top: 5px;
+   padding: 10px;
+   
+}
+form {margin: 0 auto; width: 400px;
+  background-color: #1E1E1E;
+  padding: 20px;
+}
+.option {text-align: left;}
+
+.checkboxes input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+body {font-family: 'Inter',sans-serif; background-color: #121212; color: #E0E0E0;}
+
+label {display: block;
+  color: lightgray;
+  margin-top: 10px;
+}
+textarea {  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;}
+
+button {
+  padding: 10px 30px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+input[type="submit"]:hover, button:hover {
+  background-color: #708090;
+}
